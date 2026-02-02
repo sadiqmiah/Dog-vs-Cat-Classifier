@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog vs Cat Classifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <body class="dark mode"> 
+  <div class="background-layer"></div>
+  <button id="theme-toggle">🌙</button>
+  <div class ="main-content-wrapper">
+  <div class="main-content">
+    <header>
+      <h1>Dog 🐶 vs Cat 🐱</h1>
+      <h2>AI Image Classifier</h2>
+    </header>
+
+    <div class="drop-zone" id="drop-zone">
+      <p>Drag & drop an image<br>or click to upload</p>
+      <img id="preview" class="preview" src="#" alt="Preview">
+      <input type="file" id="file-input" accept="image/*" style="display:none;">
+    </div>
+
+    <button id="predict-btn" disabled>Predict</button>
+
+    <div class="result" id="result">
+      <h3 id="label"></h3>
+      <p id="confidence-text"></p>
+    </div>
+
+    <div class="confidence-container">
+      <div class="confidence-bar" id="confidence-bar"></div>
+    </div>
+
+    <section class="how-it-works">
+      <h3>How It Works</h3>
+      <p>This project uses a TensorFlow/Keras CNN model trained on dog and cat images. FastAPI serves predictions via a REST API, and the frontend allows drag-and-drop image uploads with live results.</p>
+    </section>
+  </div>
+  </div>
+  <footer>
+    © 2026 Dog vs Cat Classifier. All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
