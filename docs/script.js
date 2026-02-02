@@ -1,4 +1,3 @@
-alert("✅ NEW SCRIPT.JS IS LOADED FROM DOCS");
 const BACKEND_URL = "https://dog-vs-cat-classifier-6svj.onrender.com";
 
 const dropZone = document.getElementById("drop-zone");
