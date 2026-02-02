@@ -1,0 +1,16 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# ML artifacts
+training/data/
+training/*.h5
+training/*.keras
+backend/model/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
