@@ -96,7 +96,7 @@ predictBtn.addEventListener('click', async () => {
     predictBtn.disabled = true;
 
     try {
-        const res = await fetch(BACKEND_URL, {
+        const res = await fetch("https://dog-vs-cat-classifier-6svj.onrender.com/predict", {
             method: "POST",
             body: formData
         });
