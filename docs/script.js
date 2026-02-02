@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://127.0.0.1:8000/predict";
+const BACKEND_URL = "https://dog-vs-cat-classifier-6svj.onrender.com/predict";
 
 const dropZone = document.getElementById("drop-zone");
 const fileInput = document.getElementById("file-input");
