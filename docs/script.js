@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://dog-vs-cat-classifier-6svj.onrender.com/predict";
+const BACKEND_URL = "https://dog-vs-cat-classifier-6svj.onrender.com";
 
 const dropZone = document.getElementById("drop-zone");
 const fileInput = document.getElementById("file-input");
@@ -96,10 +96,10 @@ predictBtn.addEventListener('click', async () => {
     predictBtn.disabled = true;
 
     try {
-        const res = await fetch("https://dog-vs-cat-classifier-6svj.onrender.com/predict", {
-            method: "POST",
-            body: formData
-        });
+        const res = await fetch(`${BACKEND_URL}/predict`, {
+    method: "POST",
+    body: formData
+});
 
         if (!res.ok) throw new Error("Prediction failed");
 
